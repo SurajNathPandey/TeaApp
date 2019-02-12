@@ -9,10 +9,10 @@ namespace TeaApp.Model
     {
         public int CarID { get; set; }
         public string Make { get; set; }
-        public int YearOfModel { get; set; }
+        public int YearOfModel { get; set; }// this is api call property
 
     }
-    public class Productmodel
+    public class Productmodel //this is hardcoded property
     {
         public string Pcity { get; set; }
         public string Pname { get; set; }
