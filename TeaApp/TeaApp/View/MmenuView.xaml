@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TeaApp.View.MmenuView" BackgroundImage="tea.jpg">
+    <MasterDetailPage.Master >
+        <ContentPage Title="Home">
+            <ContentPage.Content>
+                <StackLayout>
+                    <Label Text="TEA CENTER" TextColor="Green" 
+                           FontSize="Default" HorizontalOptions="Center" 
+                           FontAttributes="Bold"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Button Text="Order" TextColor="YellowGreen" 
+                                FontSize="Default" BackgroundColor="Black"
+                        Command="{Binding Ordertea}" 
+                                HorizontalOptions="Center" 
+                                Grid.Row="0" Grid.Column="0"/>
+                        <Button Text="Details" TextColor="YellowGreen" 
+                                FontSize="Default" BackgroundColor="Black"
+                          Command="{Binding Detailstea}"
+                                HorizontalOptions="Center" Grid.Row="0" 
+                                Grid.Column="1" />
+
+                        <Image Source="About.png" Grid.Row="1" 
+                                   Grid.Column="0">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer 
+                                    Tapped="TapGestureRecognizer_Tapped_1">
+
+                                </TapGestureRecognizer>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label Grid.Row="1" Grid.Column="1" Text="Go to home" 
+                               FontSize="15" FontAttributes="Bold" 
+                               TextColor="PaleGreen"/>
+                        <Image Source="About.png" Grid.Row="2" 
+                               Grid.Column="0">
+                            <Image.GestureRecognizers >
+                                <TapGestureRecognizer Command="{Binding Bout}">
+                                </TapGestureRecognizer>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label Grid.Row="2" Grid.Column="1" Text="Go to Order" 
+                               
+                               FontSize="15"/>
+                        <Image Source="About.png" Grid.Row="3" Grid.Column="0">
+
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding Mybout}">
+
+                                </TapGestureRecognizer>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label Text="Go to grid" FontSize="15" FontAttributes="Bold" 
+                               Grid.Row="3" Grid.Column="1"/>
+                    </Grid>
+                </StackLayout>
+            </ContentPage.Content>
+        </ContentPage>
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        <ContentPage>
+            <ContentPage.Content>
+                <StackLayout>
+
+                    <Image Source="menu.png" HorizontalOptions="Start">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                        </Image.GestureRecognizers>
+
+                    </Image>
+                </StackLayout>
+            </ContentPage.Content>
+        </ContentPage>
+    </MasterDetailPage.Detail>
+    </MasterDetailPage>
