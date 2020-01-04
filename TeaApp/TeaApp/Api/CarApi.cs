@@ -29,11 +29,11 @@ namespace TeaApp.Api
 }
 // interview question and practice c#
 1)what is typecasting.
-    thpe casting is process to converting one data type value to other data type value.
+    type casting is process to converting one data type value to other data type value.
     example convert string to int etc.
 2) what is boxing and unboxing.
     it is procees of converting Valuetype datatype to reference type data type. 
-    not- all data type except string is colled valuetype datatype. string is refrence ype data type.
+    note- all data type except string is colled valuetype datatype. string is refrence type data type.
     
     so--> converting any data type to string is colled boxing. unboxing string to any data type.
     boxing example.
@@ -43,6 +43,25 @@ string s = i.Tostring();
    string name ="suraj";
 name=int.parse();
 dataype.parse();
-exaple. int.parse();, byte.parse(); ,double.parse();
+example. int.parse();, byte.parse(); ,double.parse();
+
+3)conditional statment.
+    A statment that will gate excute based on condition is called coditional statment.
+    condition- A condition is use to compare 2 value or variable or expression.
     
+    two type of condition
+    1)if 
+    2)switch 
+    1)if-> a)if ,b)if else, c)else if ,d) multiple if e) nested if
+       a) if)--> the statment will get excute when condition is true.
+           if(true)
+           {
+               statment
+           }
+    example-
+        if(2==2)
+        {
+            console.Writeline("i am suraj");
+        }
+           
     
