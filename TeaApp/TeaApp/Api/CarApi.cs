@@ -27,3 +27,22 @@ namespace TeaApp.Api
         }
     }
 }
+// interview question and practice c#
+1)what is typecasting.
+    thpe casting is process to converting one data type value to other data type value.
+    example convert string to int etc.
+2) what is boxing and unboxing.
+    it is procees of converting Valuetype datatype to reference type data type. 
+    not- all data type except string is colled valuetype datatype. string is refrence ype data type.
+    
+    so--> converting any data type to string is colled boxing. unboxing string to any data type.
+    boxing example.
+    int i = 10;
+string s = i.Tostring();
+   unboxing example
+   string name ="suraj";
+name=int.parse();
+dataype.parse();
+exaple. int.parse();, byte.parse(); ,double.parse();
+    
+    
