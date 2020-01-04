@@ -63,5 +63,78 @@ example. int.parse();, byte.parse(); ,double.parse();
         {
             console.Writeline("i am suraj");
         }
+   b)if else-->if condition is true . it will excute statment that was written inside if . If condition is falls. it will excute the statment which is written inside else. 
+   
+       example-
+       if(2>1)
+       {
+           console.writenline("ok");
+           
+       }
+       else
+       { 
+           console.writemline(" thanks");
+       }
+   
+    c)else if-->it is use to check multiple condition and excute only one condition.
+        if(condition)
+        {
+        }
+        else if(condition)
+        {
+        }
+        else if(condition)
+        {
+        }
+        else if(condition)
+        {
+        }
+example-->
+    if(3>9)
+    {
+        console.WritenLine("ok");
+            
+    }
+    else if(3==9)
+    {
+        C.W.L("thanks");
+    }
+    else if(3<9)
+    {
+        C.W.L("suraj");
+    }
+    else
+    {
+        C.W.L("nath");
+    }
+c)Multiple if-->it is use to check multiple condition and excute multiple condition.
+    if(10>5)
+    {
+        C.W.L("hello");
+    }
+    if(20>2)
+    {
+        C.L.W("thanks");
+    }
+   if(10==10)
+   {
+       C.W.L(" thik hai");
+   }
+ e) Nested if--->the inner condition will get excute when outer condition is true.
+     
+     class suraj {
+      static void Main(string[] args) {
+         
+         string a = "ram";
+         srting b = "ravi";
+         
+         
+         if (a == ram) {
+            
+            if (b == ravi) {
+              
+               Console.WriteLine("This is nested if");
+            }
+         }
            
     
