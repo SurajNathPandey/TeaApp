@@ -136,5 +136,65 @@ c)Multiple if-->it is use to check multiple condition and excute multiple condit
                Console.WriteLine("This is nested if");
             }
          }
-           
+         
+ 4)Switch case-->It will check perticular condition and excute all cases according to condition.
+     switch(condition)
+     {
+             case1:
+             break;
+             case 2:
+             break;
+             case 3
+             break;
+         default:
+             break;
+     }
+     q)write a program to expect a charecter from console and check whether given charecter is vowel or consonent.
+using system;
+class Program
+{
+ 
+    static void Main(string[] args)
+    {
+ 
+        char ch;
+ 
+        //Reading an alphabet from user
+        Console.WriteLine("Enter any alphabet: ");
+        ch = Convert.ToChar(Console.ReadLine());
+ 
+ 
+    // checking vowel and consonant
+        switch (ch)
+        {
+            case 'a': Console.WriteLine("vowel");
+                break;
+            case 'e': Console.WriteLine("vowel");
+                break;
+            case 'i': Console.WriteLine("vowel");
+                break;
+            case 'o': Console.WriteLine("vowel");
+                break;
+            case 'u': Console.WriteLine("vowel");
+                break;
+            case 'A': Console.WriteLine("vowel");
+                break;
+            case 'E': Console.WriteLine("vowel");
+                break;
+            case 'I': Console.WriteLine("vowel");
+                break;
+            case 'O': Console.WriteLine("vowel");
+                break;
+            case 'U': Console.WriteLine("vowel");
+                break;
+            default: Console.WriteLine("consonant");
+                break;
+        }
+ 
+        Console.ReadLine();
+ 
+    }
+ 
+}
+   
     
