@@ -196,5 +196,87 @@ class Program
     }
  
 }
-   
+          
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----  ---  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    loop--> Loop ia a mechanism which is use to excute repeatedly data again and again until the condition become false.
+    Loop divided in two part -->a) (for loop) or range based loop b)(While loop) or conditional based loop.
     
+    Every loop consist3 thing in common
+    1)Initialization
+    2)Condition
+    3)Increment /Decrement
+    
+   1)Initialization--> it is use to initialize the initial value in a variable. ex- int i=5;
+   2) Condition-->A condition will always return boolean value ither tue or false.
+       or-> a condition is use to compare 2 value or variable.
+       ex-10>2 -->true
+       1>10 -->false
+    3)increment / decrement operator
+       ex- int i=5;
+          i++; -->6
+              i=i+1; --> 7
+                  
+                  i=i-1; -->5
+   
+   for(initialization;condition;increment/decrement)
+   {
+   }
+  q)write a program to print suraj 5 times.
+      
+      using system;
+          Class A
+          {
+              static void Main()
+              {
+                  for(int i=1; i<=5; i++)
+                  console.WriteLine("Suraj");
+              }
+          }
+        note->loop will reduce your code.
+   q)Write a program to accept 6 number from console and find there sum.
+      using system;
+          class A
+          {
+              Static Void Main()
+              {
+                  int sum=0;
+                  for(int i=1; i<=6; i++)
+                  {
+                      console.WriteLine("enter number");
+                      int number=int.parse(console.ReadLine());
+                      Sum=Sum+Number;
+                      Console.WriteLine(sum);
+                  }
+              }
+              
+          }
+      q)Write a program to print.
+          *#*#*
+          *#*#*
+          *#*#*
+          *#*#*
+          *#*#*
+         using system;
+          class A
+          {
+              static void Main()
+              {
+                  for(int i=1;i<=5;i++)
+                  {
+                      for(int j=1; j<=5; j++)
+                      {
+                          if(j%2==0)
+                          {
+                              C.W.L("#");
+                              
+                          }
+                          else
+                          {
+                              C.W.L("*");
+                          }
+                      }
+                  }
+              }
+          }
