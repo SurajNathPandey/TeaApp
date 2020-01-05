@@ -280,3 +280,32 @@ class Program
                   }
               }
           }
+
+    q)write a program to print.
+        ----*
+        ---**
+        --***
+        -****
+        *****
+        
+        using System;
+          Class A
+          {
+              Static void Main()
+              {
+                  for(int i=1; i<=5; i++)
+                  {
+                      for(int j=4;j>=1;j--)
+                      {
+                          Console.WriteLine("");
+                    
+                      }
+                      for(int K=1;k=i;K++)
+                      {
+                          Console.WriteLine("*");
+                      }
+                      Console.WritenLine();
+                  }
+              }
+          }
+        
