@@ -308,6 +308,82 @@ class Program
                   }
               }
           }
+     
+          While loop -->In while loop, the condition is checked before the body is executed
+using System;
+          1)initialization
+          2)condition
+          3)operator
+					
+public class Program
+{
+	public static void Main()
+	{
+		int i = 0;
+
+		while (i < 5)
+		{
+		
+			int m=i*2;
+			Console.WriteLine("Value of i: {0}", m);
+            i++
+		
+			
+		}
+	}
+}
+          
+ output-->Value of i: 0
+Value of i: 2
+Value of i: 4
+Value of i: 6
+Value of i: 8
+    
+ q)write while loop for sum of first 5 natural numbers.
+     using System;
+namespace Loop
+{
+	class WhileLoop
+	{
+		public static void Main(string[] args)
+		{
+			int i=1, sum=0;
+			while (i<=5)
+			{
+				sum += i;
+				i++;
+			}
+			Console.WriteLine("Sum = {0}", sum);
+		}
+	}
+}
+  output--> 15
+ 
+      do while loop --> in do while loop condition is checked after the body is executed.
+   do
+{
+	// body of do while loop
+}
+while (condition);
+ using System;
+  
+	class DoWhileLoop
+	{
+		public static void Main(string[] args)
+		{
+			int i = 1, n = 5, product;
+			do
+			{
+				product = n * i;
+				Console.WriteLine("{0} * {1} = {2}", n, i, product);
+				i++;
+			} while (i <= 10);
+		}
+	}
+          
+ q) Difference between While loop and Do while loop.
+    ans-->The do and while keyword is used to create a do...while loop. It is similar to a while loop, however there is a major difference between them
+  
   ---------------------------------------------------------------------------------------------------------------------------------------------------------
  -------------------------------------------------------------------------------------------------------------------------------------------------------------
  
@@ -324,7 +400,7 @@ class Program
      ans-->Any language that support oops principle then that language is called object oriented programing language.
       example--> Java, C#.net etc.
   q)what is object based programing language.
-    ans-->Any language that does not support atleast one principle of oops among the above 4. 
+    ans-->Any language that does not support atleast one principle of oops among the above 4. ++
           then that language is called as object based programing language.
   example-javascript.
       
