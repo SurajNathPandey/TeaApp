@@ -308,4 +308,40 @@ class Program
                   }
               }
           }
-        
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------
+ -------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 
+      OOPS(object oriented principle system)
+      -->object oriented principle system (oops) is a concept which is used to write computer program by using class and object.
+      
+      Principle of oops
+      1)Abstraction
+      2)Encapsulation
+      3)Inheritance
+      4)polymorphism
+   
+   q)what is object oriented programing language.
+     ans-->Any language that support oops principle then that language is called object oriented programing language.
+      example--> Java, C#.net etc.
+  q)what is object based programing language.
+    ans-->Any language that does not support atleast one principle of oops among the above 4. 
+          then that language is called as object based programing language.
+  example-javascript.
+      
+  1)Abstraction -->It is a proceess of getting required data and hiding unnecessary data.
+  
+  2)Encapsulation-->It is proceess of binding or grouping of common set of state and behaviore(variable and method).
+                    in a single container.
+      note-->we can apply encapsulation by using class.
+     
+  3)Inheritance-->It is a mechanism of creating a new class by already existing class.
+               OR-->It is mechanism of establisting relationship between two or more classes.
+               OR--->Or Inheritance is mechanism to optaining variable and methods from one class to another class.
+                   -->the class which is giving variable and method is called as Base class or super class or parent class.
+                   -->the class which is taking variable and method is called as Drive class or sub class or child class.
+                       : operator is called inheritance operator.
+  
+   q)What are the advantages of inheritance.
+       1)Reusabitity
+       2)Extensability
+       3)Reimplementation
