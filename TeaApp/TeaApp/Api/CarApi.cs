@@ -421,3 +421,28 @@ while (condition);
        1)Reusabitity
        2)Extensability
        3)Reimplementation
+			       
+    4)polymorphism --> polymorphism means one thing in many forrms. 
+		       There are two type of polymorphism.
+       1)Compile time Polymorphism 
+       2)Run time polymorphism
+			       
+       1)Complile time polymorphism --> When output is dicided at Compile time is called compile time polmorphism.
+          example--> overloading.
+       2)Runtime polymorphism --> When Output is dicided at runtime is called runtime polymorphism.
+	   example--> overriding.
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------
+Frequently asked important interview questions.
+----	-----	------	    ---   ------ -----
+Q)What is constroctor.
+  ANS-->A constructor is a member function in a class that has the same name as its class. The constructor is automatically invoked whenever an object class is created.
+	Constroctor is used to initializing class.  
+
+Q)What is an object.
+  ANS--> An object is an instance of a class.
+
+Q) What is the difference between public, static, and void.
+  ANS-->public-Public declared variables or methods are accessible anywhere in the application.
+	static-Static declared variables or methods are globally accessible without creating an instance of the class. 
+	void-
