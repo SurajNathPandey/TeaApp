@@ -547,6 +547,97 @@ Ans-->Sometimes there are some errors that need to be handled as per user requir
 Q)What is the base class in .net from which all the classes are derived from.
 Ans-->System.Object . System.Object is a base class in .net.
 	
-Q)What is delegates
-ans-->
+Q)What is delegates.
+Ans-->A delegate is a type that will defines a method signature and it can pass a function as a parameter. 
+      OR In simple words we can say delegate is a . NET object which points to a method that matches its specific signature.
+      OR Delegates allow methods to be passed as parameters. Delegates can be used to define callback methods.
 	   
+Q)Types of delegates
+ 
+Ans-->There are two types of delegates, singlecast delegates, and multiplecast delegates.
+ 
+ a)Singlecast delegate
+ 
+  Singlecast delegate point to single method at a time. In this the delegate is assigned to a single method at a time. They are derived from System.Delegate class.
+ 
+ b)Multicast Delegate
+ 
+  When a delegate is wrapped with more than one method that is known as a multicast delegate.
+ 
+  In C#, delegates are multicast, which means that they can point to more than one function at a time. They are derived from System.MulticastDelegate class.
+
+Q)What is the difference between a Struct and a Class.
+  Ans-->Structs are value-type variables, and classes are reference types
+	 Structs cannot be inherited. but class can be inherit.
+
+Q)What are indexers in C# .NET.
+  Ans-->Indexers are known as smart arrays in C#. It allows the instances of a class to be indexed in the same way as an array.
+
+  Eg:
+
+  public int this[int index]    // Indexer declaration
+	  
+Q) What is difference between the "throw" and "throw ex" in .NET?
+
+Ans-->   "Throw" statement preserves original error stack whereas "throw ex" have the stack trace from their throw point. 
+	  It is always advised to use "throw" because it provides more accurate error information.
+	 
+Q)What are C# attributes and its significance?
+
+Ans-->C# provides developers a way to define declarative tags on certain entities, eg. Class, method, etc. are called attributes. 
+	  The attribute's information can be retrieved at runtime using Reflection.
+	 
+Q)How to implement a singleton design pattern in C#?
+
+In a singleton pattern, a class can only have one instance and provides an access point to it globally.
+
+Eg:
+
+Public sealed class Singleton
+{
+Private static readonly Singleton _instance = new Singleton();
+}
+	      
+Q)Is C# code is managed or unmanaged code?
+	
+Ans-->C# is managed code because Common language runtime can compile C# code to Intermediate language.	 
+
+Q)What do you understand by regular expressions in C#.
+	
+Ans--> Regular expression is a template for matching a set of input. It can consist of constructs, character literals, and operators. 
+	Regex is used for string parsing, as well as replacing the character string.
+
+Q)Explain Reflection in C#.
+		
+Ans-->The ability of code to access the metadata of the assembly during runtime is called Reflection. 
+
+Q) Why do we use Async and Await in C#?
+	
+Ans--> Processes belonging to asynchronous programming run independently of the main or other processes. 
+	In C#, using Async and Await keywords for creating asynchronous methods.
+		
+Q)Can “this” be used within a static method.
+		
+Ans-->We can't use this in a static method because the keyword 'this' returns a reference to the current instance of the class containing it. 
+      Static methods (or any static member) do not belong to a particular instance.
+		
+Q)What are partial classes?
+ 
+Ans-->A partial class is only use to splits the definition of a class in two or more classes in a same source code file.  You can create a class definition in multiple files but it will be compiled as one class at run time.
+	when you will create an instance of this class so you can access all the methods from all source file with a same object.
+
+Partial Classes can be create in the same namespace it’s doesn’t allowed to create a partial class in different namespace. So use “partial” keyword with all the class name which you want to bind together with the same name of class in same namespace, 
+Ex-public partial class Employee
+{
+    public void DoWork()
+    {
+    }
+}
+
+public partial class Employee
+{
+    public void GoToLunch()
+    {
+    }
+}
+ 
