@@ -526,5 +526,27 @@ Q)Write down the C# syntax to catch an exception (part of exception handling) .
 
 Q)What is difference between an interface and abstract class.
 	
-Ans-->
-	  
+Ans-->Interface-->In Interface all method having puplic access modifire by default . Mean all methos will be public.
+      Abstract -->In abastact method may have with different access modifire.
+      Interface--> methods having only declaration(method heading) but no definition(method body).
+      Abstract--> It is class which contain All class properties like variable method etc.
+      Interface-->It will contain only public method decraration(method heading).
+
+Q)What are generics in C#.NET.
+Ans-->Generics are used to make reusable code. it will  increase type safety, and performance.
+       Using generics, we can create collection classes. To create generic collection, System.Collections.Generic namespace should be used.
+	      Generics promotes the usage of parameterized types.
+
+Q)What is the difference between Finalize() and Dispose() methods.
+Ans-->Dispose() is called when we want for an object to release any unmanaged resources with them. On the other hand,
+	      Finalize() is used for the same purpose, but it doesn't assure the garbage collection of an object.
+		      
+Q)What are Custom Exceptions.
+Ans-->Sometimes there are some errors that need to be handled as per user requirements. Custom exceptions are used for them and are used defined exceptions.
+
+Q)What is the base class in .net from which all the classes are derived from.
+Ans-->System.Object . System.Object is a base class in .net.
+	
+Q)What is delegates
+ans-->
+	   
