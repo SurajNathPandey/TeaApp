@@ -431,6 +431,58 @@ while (condition);
           example--> overloading.
        2)Runtime polymorphism --> When Output is dicided at runtime is called runtime polymorphism.
 	   example--> overriding.
+
+Class-->Class is userDefind reference type datatype which consists of state(variable) and behavior(method).
+ class Classname
+{
+	variable
+        method
+}
+	      
+ex
+Class Employee
+{
+	int eno;
+	string ename;
+	double esalary;
+	
+   void setEmployeedata();
+    {
+	    //any logic
+    }
+
+void setEmployeedata();
+    {
+	    //any logic
+    }
+void setEmployeedata();
+    {
+	    //any logic
+    }
+}
+	      
+Object-->Object is instance of class.
+Instace-->intance means allocating sufficient memory for instance variable.
+
+whenever we creat an object for class then memory is allocated for instance variable.
+	
+Syntax for creating object
+-->Classname objectname = new classname();
+
+Q)what is diffence between class and object.
+class
+1)class can exist without object.
+2)class does not have memory.
+3)class consist of variable and method logicaly without memory.
+Object
+1)Object can not exist without class
+2)object have memory.
+3)object consists of instance variable and instance method with memory.
+
+point to remember
+1)class is an idea or plane to creat object.
+2)We can creat multiple object for a single class.
+3)class is loaded only one time but object is created multiple time.
  -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------------------------------
 some important interview questions.
