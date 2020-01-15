@@ -483,6 +483,84 @@ point to remember
 1)class is an idea or plane to creat object.
 2)We can creat multiple object for a single class.
 3)class is loaded only one time but object is created multiple time.
+
+Variable-->variable is a name given for a perticular memory location.
+Q) What is the perpuse of variable
+ans-->the perpuse of variable is identify a perticular memory location.
+ex-- If we want to store the value in  memory. or if we want to retrive value from memory we use that variable name.
+sntax- Datatype variablename;
+	     int suraj =10;
+	      
+there are two type of variable.
+1)static variable
+2)instance variable
+
+1)static varible must declare with static keword.
+2)static varible must declare inside the class and outside the method with static keword.
+Class
+{
+	//Static datatype variablename;
+	static string complanyname;
+    static void main()
+	    
+    {
+    }
+	
+}
+	   
+	     
+2)Instance -->Instance variable must declare inside class and outside the method without static keword.
+Class Student
+{
+	int Sno;
+	string Sname;
+	
+   static void main()
+   {
+   }
+}
+	      
+Q)Difference between static variable and instace variable.
+static
+1)static variable diclare with static keyword.
+2)The memory of static variable is allocated in stack.
+3)the memory of statc variable will allocated at the time of class loading.
+4)the memory for static variable will allocated only one time at the time of class loading.
+5)static variable allocated common memory for all the object.
+6)the lifespan of statice variable is ubtile the class is live.
+7)sntax to acces static variable-- classname.variablename;
+8)when data is common for all the object then make the variable as static.
+
+Instance variable
+1)no special keyword requered.
+2)the memory for instance variable is allocated in heap.
+3)the memory for instace variable is allocated when we creat object.
+4)the memory for instace variable will allocated everyhing  time when we creat object
+5)instance variable will allocate seperate memory for every object.
+6)the lifespan of instance variable is untile the object live.
+7)sntax to access instance variable is --- Objectname.variablename;
+8)if data is unik for all object then make the variable as instance.
+
+Q)Local variable-- the variable which declare withing the block or withing the method called local variable.
+Rule
+1)local variable must be declear within the block or within the method.
+2)locat variable must not be static.
+3)local variable must be initialize.
+4)the scop of local variable is withing the method.
+
+	class A
+		
+	{
+		Static void main()
+			
+		{
+			int x=10; //local variable
+			if(10>2)
+			{
+				int y=20; //local variable
+			}
+		}
+	}
  -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------------------------------
 some important interview questions.
