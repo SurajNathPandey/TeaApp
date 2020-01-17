@@ -770,4 +770,33 @@ public partial class Employee
     {
     }
 }
- 
+	      
+Q)What is Linq(Language Integrated Query).
+Ans-->LINQ (Language Integrated Query) is uniform query syntax in C# to retrieve data from different sources and formats.
+      It will provid a single querying interface for different types of data sources.	
+      LINQ is a structured query syntax built in C# and VB.NET to retrieve data from different types of data sources such as collections, ADO.Net DataSet, XML Docs, web service and MS SQL Server and other databases.
+	     
+example-->gets all name from an array which contains 'a'.
+	     
+ using System;
+using System.Linq;
+
+public class Program
+{
+	public static void Main()
+	{
+		// Data source
+		string[] names = {"Bill", "Steve", "James", "Mohan" };
+        
+		// LINQ Query 
+        var myLinqQuery =  from myname in names
+            			   where myname.Contains('a')
+            				select myname;
+        
+		// Query execution
+        foreach (var name in myLinqQuery)
+            Console.Write(name + " ");
+	}
+}
+
+to check this code https://www.tutorialsteacher.com/codeeditor?cid=cs-qqYNum
