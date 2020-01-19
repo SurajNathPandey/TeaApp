@@ -561,6 +561,209 @@ Rule
 			}
 		}
 	}
+	      
+Method--->method is a subprogram which is use to perform some operation.
+	
+	method consists of two thing.
+	method=method heading + method body.
+1)method heading or method signature= assesmodifire(by defoult private) returntype + Methodname + parameter
+2)Methodbody-->the code that we write within the block is called as method body.
+{
+}
+	      
+-->we must declear mrthod inside the class only.
+	
+ex- class classname
+{
+	void methodname() --->MA
+	{
+		
+		---->MB
+	}
+}
+	      
+-->method will gets excuted when we call it.
+
+there two type of method 
+1)Static Method
+2)Instance Method
+
+Q)write a difference between static and instance method.
+	
+static method
+1)static method must declear with static keyword.
+2)static method use to perform operation on static variable.
+
+Class Classname
+{
+	static void Methodname()
+	{
+	}
+}
+	      
+3)sntax to call static method
+ Classname.methodname();
+ 
+Instance method
+1)no more special keyword is required to use instace method.
+2)Instance method is use to perform operation on instance variable.
+	
+Class Classname
+{
+	void Methodname()
+	{
+	}
+}
+3)sntax to call instance method
+  objectname.methodname();
+
+	     	      
+Q)write a addition to two number program by using static method and static variable.
+using System;
+Class A
+{
+	static int x;
+	static int y;
+   static void Add()
+   {
+	   x=10;
+	   y=20;
+      console.writeline("sume is" + (x+y));
+   }
+   static void main()
+   {
+	   A.Add();
+   }
+}
+Q)write addition of two program by using instance method and instance variable.
+
+Using System;
+Class A
+{
+	int x;
+	int y;
+  void Add()
+  {
+	  x=10;
+	  y=20;
+     conole.WriteLine("sum is" +(x+y));
+  }
+
+  static void main()
+  {
+	  A a1=new A();
+	  a1.Add();
+  }
+}
+
+note--> Method must have return type the return type must be void or any datatype.
+    --> If return type is void method will not return any value.
+    ---> if return type is data type method must be return value.
+ex-
+ class A
+ {
+	 public void methodname()
+	 {
+		 any logic.
+	 }
+ }
+
+Class A
+{
+	public int methodname()
+	{
+		any logic
+		
+	    return 10;
+	}
+}
+	    
+-->can we call static method in another static method withing the same class
+	without using classname.
+Ans-->yes
+ex-
+using system;
+Class A
+{
+	static void M1()
+	{
+	   Console.WriteLine("i am M1")
+	}
+	
+	static void M2()
+	{
+		M1();
+	   Console.WrileLine(" I am M2")
+	}
+	
+	static void main()
+	{
+		M2();
+	C.R.L("kfajfajfajfa");
+	}
+}
+	      
+Q)can we call instance method in another instance method within same class.
+	without using Object.
+
+Ans-->yes
+ex-
+using System;
+Class A
+{
+	void M1()
+	{
+		Console.WriteLine(" i am M1")
+	}
+	
+	Void M2()
+	{
+		M1();
+	   Console.WriteLine(" i am M2");
+	}
+	
+	Static void main()
+	{
+		console.WriteLine(" i am main");
+	   
+		A a1 = new A();
+		a1.M2();
+	  note-->object creation must requered for instance method.
+	}
+}
+	      
+-->can we call static method in instance method method directly without using class name.
+	Ans--> yes
+
+-->can we call instance method in static method directly without using object name.
+	Ans--> no
+
+common for both statment ex-
+
+ Class A
+{
+	static void M1()
+	{
+		Console.WriteLine(" I am m1");
+	}
+	
+	void M2()
+	{
+		M1();
+	 Console.WriteLine("ssafafa")
+	}
+	
+	Static void Main()
+	{
+		Console.WriteLine("adadadad");
+		A a1 = new A();
+		a1.M2();
+	}
+}
+
+	
+	      
+
  -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------------------------------
 some important interview questions.
