@@ -763,6 +763,139 @@ common for both statment ex-
 
 	
 	      
+	                  Passing parameter mechanism
+                        ------------------------------
+                        ------------------------------
+Q)What is method parameters.
+
+Asn-->the variable that are declear withing the method parathesis are called as method parameter.
+
+Method parameters are two type
+
+1)Formal parameters
+2)Actual parameters
+
+1)Formal parameters-- the variable that are declear at the time of declearing method are called 
+   as formal parameter.
+
+   Class A
+    {
+       void show (int x, int y) --->Formal Parameters
+       {
+       }
+    }
+
+2)Actual parameters--thwe variable which are declear at the time of calling the method are called
+     as Actual parameters.
+
+    Class A
+    {
+       void show () 
+       {
+         int a=4;
+         int b=4;
+        A a1 = new A();
+        a1.show(a,b);--->Actual parameters
+       }
+    }
+
+note--> In C#.net we can achieve passing parameter mechanism in two ways.
+
+1) Call By Value.
+2)Call By Refrence.
+
+1) Call by value
+Ans-->In this mechanism will pass the value at the time of calling the method.
+
+     OR--In this mechanism the Modification in Formal parameter will not effect actual parameters.	
+ex- 
+	Using Sytem 
+	Class A
+        {
+	   void show(int x, int y)
+	   {
+		   x=9;
+	           y=8;
+		   Console.WriteLine("X is"+X);
+		   Console.WriteLine("Y is "+ y);
+	   }
+	Static void main()
+	{
+		A a1 =new A();
+		int a=5;
+		int b=6;
+		a1.show(a,b);
+		Console.writeline("a is" + a);
+		Console.WriteLine("b is" +b);
+	}
+	   
+        }
+	      output-- 5,6
+	      
+2)Call by Reference -->It is mechanism of calling the method by passing the address.
+  Or- In call by reference the modification in Formal parameter will effect Actual parameters.
+	
+Note-->We can achive call by refrence by using ref and out keyword.
+	ex-
+	Using System;
+	Class A
+	{
+	   void show( ref int x, ref int y) or(out int x, out int y)
+	   {
+		   x=8;
+		   y=9;
+		   Console.WritenLine("X is " + x);
+	           Console>WritenLine("y is " + y);
+	   }
+		Static void Main()
+		{
+			A a1 = new A();
+			int a=5;
+			int b=6;
+			a1.show(ref a, ref b); or (out a, out b);
+			Console.WritenLine("a is " +a);
+			Console.WriteLine("b is "+b);
+		}
+	}
+	      
+	      Output--8,9
+		      
+Q)Difference Between ref and out keyword.
+		      
+ref-
+1)ref must declear with ref Keyword.
+2)initialization of Formal parameter is optional.
+3)initialization of Actual parameter is mandetory. 
+		      
+out--
+1)out must declear with out keyword.
+2)initialization of Formal parameters is mandetory.
+3)initialization of Actual parameter is Optional.
+		      
+	  
+		      Params Keyword
+		      --------------
+Q)Params Keyword-->it is using to pass parameter as a optional.
+
+Param Keyword must declear in the last place of parameter list.
+		      
+note-->Params keyword can only Apply for Array not for variable.
+	ex-
+	Using System;
+	Class A
+	{
+		Static void Show(int x, int y, params int []2)
+		{
+			Console.WritenLine(x);
+			Console.WritenLine(y);
+			Console.WritenLine(2.Length);
+		}
+		Static void Main()
+		{
+			A.show(5,6);
+		}
+	}
+		    
 
  -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------------------------------
