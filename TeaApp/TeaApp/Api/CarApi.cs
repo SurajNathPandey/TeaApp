@@ -840,7 +840,7 @@ Note-->We can achive call by refrence by using ref and out keyword.
 	Using System;
 	Class A
 	{
-	   void show( ref int x, ref int y) or(out int x, out int y)
+	   void show( ref int x, ref int y)---->(optional) or(out int x, out int y)--->(mandetory)
 	   {
 		   x=8;
 		   y=9;
@@ -852,7 +852,7 @@ Note-->We can achive call by refrence by using ref and out keyword.
 			A a1 = new A();
 			int a=5;
 			int b=6;
-			a1.show(ref a, ref b); or (out a, out b);
+			a1.show(ref a, ref b)(---->Mandetory); or (out a, out b);(--->optional)
 			Console.WritenLine("a is " +a);
 			Console.WriteLine("b is "+b);
 		}
