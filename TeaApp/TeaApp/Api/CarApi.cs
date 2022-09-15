@@ -1136,3 +1136,102 @@ public class Program
 }
 
 to check this code https://www.tutorialsteacher.com/codeeditor?cid=cs-qqYNum
+	      
+Q)what is abstract class
+	
+ANS--> Abstract class: is a restricted class that cannot be used to create objects (to access it, it must be inherited from another class).
+	OR
+	An abstract class is a class that is declared abstract —it may or may not include abstract methods. Abstract classes cannot be instantiated, but they can be subclassed.
+	OR 
+	Abstract class Declear with abstract keyword all thing which there in a general class it may there in abstract class, apart from it abstract class may contain
+	abstract method which is not there in general class. we can't creat object for abstract class , we have use in different class with help of inheritance .
+Q)Why do we use abstract in C#.
+	
+Ans-->The purpose of an abstract class is to provide a blueprint for derived classes and set some rules what the derived classes must implement when they inherit an abstract class.
+	OR
+       You can take advantage of abstract classes to design components and specify some level of common functionality that must be implemented by derived classes.
+	
+Q)What is abstract Method.
+Ans--->	An Abstract method is a method without a body. The implementation of an abstract method is done by a derived class. When the derived class inherits the abstract method from the abstract class, it must override the abstract method. 
+	This requirment is enforced at compile time and is also called dynamic polymorphism.
+
+	using System;
+
+namespace MyApplication
+{
+  // Abstract class
+  abstract class Animal
+  {
+    // Abstract method (does not have a body)
+    public abstract void animalSound();
+    // Regular method
+    public void sleep()
+    {
+      Console.WriteLine("Zzz");
+    }
+  }
+  Example 1
+	  
+  // Derived class (inherit from Animal)
+  class Pig : Animal
+  {
+    public override void animalSound()
+    {
+      // The body of animalSound() is provided here
+      Console.WriteLine("The pig says: wee wee");
+    }
+  }
+
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      Pig myPig = new Pig();  // Create a Pig object
+      myPig.animalSound();
+      myPig.sleep();
+    }
+  }
+}
+	      
+Example 2
+	abstract class Language {
+
+  // abstract method
+  public abstract void display1();
+
+  // non-abstract method
+  public void display2() {
+    Console.WriteLine("Non abstract method");
+  }
+}
+	      
+	      Inheriting Abstract class
+              -------------------------
+using System;
+namespace AbstractClass {
+
+  abstract class Language {
+
+    // non-abstract method
+    public void display() {
+      Console.WriteLine("Non abstract method");
+    }
+  }
+
+  // inheriting from abstract class
+  class Program : Language {
+
+    static void Main (string [] args) {
+      
+      // object of Program class
+      Program obj = new Program();
+
+      // access method of an abstract class
+      obj.display();
+
+      Console.ReadLine();
+    }
+  }
+}
+
+
